@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xyl-stylesheet href="Foo.css"?>
+
+<document xmlns="http://hoa-project.net/xyl/xylophone">
+  <div id="left">
+    <h1>Tous les contacts</h1>
+
+    <form action="#" method="get">
+      <input type="search" placeholder="Gordon Freeman" />
+    </form>
+
+    <div id="list">
+      <ul>
+        <li>Alyx</li>
+        <li>Bazqux</li>
+        <li>Foobar</li>
+        <li>Gordon Freeman</li>
+        <li>John Doe</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="right">
+    <p>Gordon Freeman</p>
+  </div>
+</document>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://myapp/skin/main.css" type="text/css"?>
+
+<window id="main"
+        title="My Application"
+        screenX="100"
+        screenY="100"
+        width="400"
+        height="400"
+        accelerated="true"
+        drawintitlebar="false"
+        hidechrome="true"
+        sizemode="normal"
+        persist="screenX screenY width height sizemode"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <titlebar id="titlebar" allowevents="true">
+    <hbox id="titlebar-button">
+      <button label="x" oncommand="window.close()" />
+      <button label="-" />
+      <button label="+" />
+    </hbox>
+    <spacer flex="1" />
+    <hbox id="titlebar-title"><description id="titlebar-name" /></hbox>
+    <spacer flex="1" />
+    <hbox id="titlebar-widget">
+      <button label="o" oncommand="refresh();" />
+    </hbox>
+  </titlebar>
+
+  <vbox id="window" flex="1">
+    <browser id="browser" src="http://127.0.0.1:8888" flex="1" />
+  </vbox>
+
+  <script type="application/javascript" src="chrome://myapp/content/main.js"/>
+</window>

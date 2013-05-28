@@ -1,0 +1,44 @@
+window {
+    -moz-appearance: none;
+    background: transparent;
+    border-radius: 5px;
+}
+
+#window {
+    background: #fff;
+}
+
+#titlebar {
+    height: 22px;
+    background: red;
+}
+
+    #titlebar > spacer {
+        pointer-events: none;
+    }
+
+#titlebar-button {
+    margin: 0 0 0 5px;
+}
+
+#titlebar-widget {
+    margin: 0 5px 0 0;
+}
+
+    #titlebar-button > button,
+    #titlebar-widget > button {
+        -moz-appearance: none;
+        min-width: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+#titlebar-title {
+    pointer-events: none;
+}
+
+    #titlebar-title > description {
+        line-height: 22px;
+        margin: 2px 0 0 0;
+        padding: 0;
+    }
