@@ -31,9 +31,7 @@ var $$ = function ( selector ) {
 log('Start Main.js');
 
 function refresh(){
-	
-	$('browser').setAttribute('src' , 'http://127.0.0.1:8888');
-	
+	alert('refresh');
 }
 
 $('#titlebar-name').value = $('#main').getAttribute('title')
